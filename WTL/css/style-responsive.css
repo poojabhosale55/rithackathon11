@@ -1,0 +1,194 @@
+﻿html {
+  font-size: 70%;
+  background: #300f57;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+h2,
+.xlarge {
+  font-size: 1.9rem;
+  line-height: 1.3;
+}
+
+h3,
+.large {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+h4,
+.medium {
+  line-height: 1.3;
+}
+
+.cp-google-services,
+.img-wrap {
+  display: none;
+}
+
+.content-container {
+  padding: 0 15px 20px;
+  background: #f3f3f3;
+}
+
+.scrolling-banner {
+  line-height: 1.8;
+  padding-bottom: 5px;
+}
+
+.main-header {
+  height: 144px;
+  background: #f3f3f3;
+    top: 57px;
+    left: 0px;
+    width: 176px;
+}
+
+/* Home link within the header should be across whole of header */
+.home-link {
+  top: 6px;
+  width: 105px;
+  height: 135px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  padding: 10px 0;
+}
+
+.page-title {
+  width: 100%;
+  padding: 12px 15px;
+  margin-left: -15px;
+}
+
+footer {
+  height: 187px;
+  background: #300f57;
+}
+
+
+/* Responsive Navigation
+======================== */
+
+.main-nav ul li:nth-child(n+1)::before,
+.main-nav ul li:nth-child(n+1)::before,
+.login-responsive a::before {
+  background: none;
+  font-size: 2rem;
+  position: absolute;
+  margin: 11px 5px 0 5px;
+  z-index: 1!important;
+}
+
+.login-responsive a:before {
+    left: 0;
+    margin-top: 0;
+}
+
+.main-nav ul li a {
+    padding: 9px 50px 9px 45px;
+}
+
+.main-nav ul li ul li a {
+    padding: 9px 25px 9px 25px;
+}
+
+.responsive-bar {
+  background: #48157a;
+}
+
+.main-nav {
+  background: #48157a;
+}
+
+.main-nav h2 {
+  border-color: #fff;
+}
+
+.responsive-bar,
+.website-navbar-toggle::before,
+.main-nav,
+.main-nav h2 {
+  color: #fff;
+}
+
+.website-navbar-toggle:before {
+  background: #391061;
+}
+
+.main-nav a {
+  color: #fff;
+}
+
+.main-nav a:focus,
+.main-nav a:hover {
+  color: #f3e29f;
+}
+
+/* Back Arrow and Closing Navigation */
+
+.main-nav .close-mobile-nav,
+.main-nav .ps_activate-main-nav {
+  color: #fff;
+}
+
+.main-nav .close-mobile-nav:focus,
+.main-nav .close-mobile-nav:hover,
+.main-nav .ps_activate-main-nav:focus,
+.main-nav .ps_activate-main-nav:hover {
+  color: #f3e29f;
+}
+
+
+/* Log in link within responsive menu */
+.login-responsive a {
+  color: #e6e6e6;
+  background: #290b46;
+}
+
+.login-responsive a:focus,
+.login-responsive a:hover {
+  color: #f3e29f;
+}
+
+/* Footer Links
+=============== */
+
+.footer-links {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-links ul {
+  float: none;
+  text-align: center;
+}
+
+.footer-left {
+  margin-bottom: 10px;
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+
+/* Additional Media Queries (Images etc.)
+========================================= */
+
+@media (max-width: 640px) {
+
+  .main-header {
+    height: 144px;
+  }
+
+  footer {
+    height: 187px;
+  }
+
+}

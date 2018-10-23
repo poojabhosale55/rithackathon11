@@ -1,0 +1,738 @@
+﻿html {
+  font-size: 62.5%;
+  background-color: #581995; /* Please have a colour or image - background on html needed for javascript */
+}
+
+body {
+  background: #fff;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+
+
+}
+
+.inner-container {
+  position: relative;
+  width: 980px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+/*Hoverable Dropdown
+   
+ /* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:  #581995}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+/* Top Bar Styles
+=================== */
+
+.top-bar {
+  background: #f3f3f3;
+  height: 191px;
+  position: relative;
+  z-index: 167;
+  box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.scrolling-banner {
+  height: 50px;
+  line-height: 44px;
+}
+
+.main-header {
+  position: absolute;
+  height: 144px;
+}
+
+/* Home link within the header */
+.home-link {
+  top: -23px;
+  left: 56px;
+  width: 150px;
+  height: 192px;
+}
+
+.google-wrap {
+  position: absolute;
+  right: 0;
+}
+
+.content-container {
+  position: relative;
+  min-height: 360px;
+  padding: 40px 20px 60px 20px;
+}
+
+.login-link a {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  z-index: 101;
+  padding: 3px 5px;
+  border-radius: 2px;
+  line-height: 1.8;
+  text-align: right;
+}
+
+.login-responsive {
+  display: none;
+}
+
+.page-title {
+  left: -15px;
+  padding: 0 0 3px 13px;
+  margin: 0 0 10px 0;
+}
+
+footer {
+  height: 60px;
+}
+
+/* Slideshow Styles
+===================== */
+.slideshow_wrapper {
+  width:500px;
+  height:280px;
+  overflow: hidden;
+   
+}
+
+.slideshow {
+  width:2711px;
+  height:280px;
+  margin: 0 0 0 -1000px;
+ position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration:10s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:alternate;
+   -webkit-animation-play-state: running;
+    top: 0px;
+    left: 0px;
+}
+
+.slide {
+  
+  width:500px;
+  height: 270px;
+  position:relative;
+  float:left;
+  overflow:hidden;
+  
+}
+
+.slideshow img{
+  width:1377px; 
+height:270px;
+}
+
+@-webkit-keyframes slide_animation {
+  
+  0% {left:0px;}
+  10% {left:500px;}
+  20% {left:500px;}
+  30% {left:500px;}
+  40% {left:500px;}
+  50% {left:500px;}
+  60% {left:500px;}
+  70% {left:1000px;}
+  80% {left:1000px;}
+  90% {left:1000px;}
+  100% {left:1000px;}
+  
+  
+}
+
+
+
+
+
+.img-wrap {
+  position: relative;
+  min-height: 160px;
+  height: 48vh;
+}
+
+
+
+
+
+
+.full-width-slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+
+
+/* MAIN NAVIGATION */
+
+.main-nav {
+  position: absolute;
+  height: auto;
+  top: 76px;
+  right: 135px;
+  z-index: 10;
+  outline: none;
+}
+
+.main-nav h2 {
+  display: none;
+}
+
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li {
+  position: relative;
+  display: block;
+  width: 121px;
+  height: 87px;
+  cursor: pointer;
+  float: left;
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
+
+.main-nav ul li:first-child {
+  border-left: 1px solid #ccc;  
+}
+
+.main-nav ul li:nth-child(3) {
+  width: 135px;
+}
+
+.main-nav ul li:nth-child(4) {
+  width: 135px;
+}
+
+/* Main navigation background change */
+.main-nav ul li::before { 
+  background: #581995; background: linear-gradient(to top, #581995 50%, #fff  50%);
+}
+
+.main-nav ul li::before {
+  width: 55px;
+  height: 44px;
+  border-radius: 100%;
+  font-size: 3rem;
+  position: relative;
+  background-size: 200% 200%;
+  background-position: left bottom;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding-top: 11px;
+  color: #fff;
+}
+
+.main-nav [class*='ps_topic_slug_']:hover::before, 
+.main-nav [class*='ps_topic_link_']:hover::before {
+   background-position: left top;
+}
+
+.main-nav ul li:focus a, .main-nav ul li:hover a,
+.main-nav ul li:focus::before, .main-nav ul li:hover::before {color: #581995; }
+
+
+.main-nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #4b4b4b;
+  font-size: 1.7rem;
+  position: relative;
+  top: -56px;
+  line-height: 164px;
+}
+
+/* Pop Ups */
+
+/* Styles for ALL pop-up menus added here, styles for individual menus added below */
+.main-nav ul li ul {
+  position: absolute;
+  display: none;
+  top: 115px;
+  left: 0;
+  text-align: center;
+  background-color: #fff;
+  z-index: 102;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav ul li ul li {
+  border-left: none!important;
+}
+
+
+.main-nav ul li ul:before {
+  content: '';
+  width: 100%;
+  height: 25px;
+  background: #f3f3f3;
+  display: block;
+  position: absolute;
+  top: -24px;
+}
+
+
+.main-nav ul li ul,
+.main-nav ul li ul li {
+  width: 200px;
+}
+
+.main-nav ul li.ps_nav-top-level:focus ul,
+.main-nav ul li.ps_nav-top-level:hover ul {
+  display: block;
+}
+
+.main-nav ul li.ps_nav-top-level:focus ul ul,
+.main-nav ul li.ps_nav-top-level:hover ul ul {
+  display: none;
+}
+
+.main-nav li ul li {
+  display: block;
+  width: 100%!important;
+  height: auto; /* Resets the height from the main li buttons */
+  padding: 0;
+  margin: 0;
+  text-indent: 0;
+  background: none;
+}
+
+/* To style the links in the pop up menus
+   Styles for ALL menus added here, styles for individual menus added below */
+.main-nav li ul li a {
+  display: block;
+  width: auto;
+  color: #989797!important;
+  padding: 7px;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: none;
+  line-height: 1.4;
+  position: static;
+}
+
+.main-nav ul li ul li {
+  border-bottom: 1px solid #ededed;
+  border-right: none;
+}
+
+.main-nav ul li ul li:last-child {
+  border-bottom: none;
+}
+
+/* To style the hover effects for the links in the popup menus
+   Styles for ALL menus added here, styles for individual menus added below */
+.main-nav li ul li a:focus,
+.main-nav li ul li a:hover {
+  color: #fff!important;
+}
+
+/* To specifically style the hover effects for the links for each menu, eg, text colour etc.  */
+.main-nav ul li ul li:focus,
+.main-nav ul li ul li:hover {
+  background: #581995;
+}
+
+
+
+/* Bootom Bar 
+=============== */
+
+.bottom-bar {
+  background: #300f57;
+  height: 60px;
+}
+
+/* Footer Links
+=============== */
+
+.footer-links {
+  position: relative;
+  width: 99%;
+  height: 40px;
+  top: 19px;
+  margin: 0 auto;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-left li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-left li:last-child {
+  margin-right: 0;
+}
+
+
+.footer-left {
+  float: left;
+}
+
+.text-right li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Latest News */
+
+.news-items {
+  width: 790px;
+}
+
+/* Scroll to top button
+======================= */
+
+.scroll-top {
+  border: 1px solid #000;
+  border-bottom: 1px solid #581995;
+  color: #581995;
+  background-color: #fff;
+  bottom: 59px;
+}
+
+.scroll-top:hover {
+  color: #000;
+}
+
+/* General Styling
+==================*/
+
+.cp-google-services {
+  position: relative;
+  min-width: 305px;
+  width: calc(50px * 2); /* width of one button * amount of buttons */
+  height: 120px; /* button height * 2 */
+  overflow: hidden;
+  z-index: 9;
+}
+
+.cp-search-active, .cp-translate-active {
+  z-index: 11;
+}
+
+.cp-google-services:not(.cp-display) .cp-google-triggers {
+  background:#fff; /* Change this to match top bar background */  
+}
+
+/* G services triggers
+====================== */
+
+/* Code below if content appears from right,left ,top or display. */
+.cp-content-right .cp-google-triggers,
+.cp-content-top .cp-google-triggers,
+.cp-display .cp-google-triggers,
+.cp-content-left .cp-google-triggers{
+  position: relative;
+  font-size: 0;
+  z-index: 10;
+  text-align: right;
+} 
+
+
+.cp-google-triggers li {
+  position:absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #f3f3f3;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+  color: #581995;
+  vertical-align:top;
+  right: 37px;
+}
+
+.cp-google-triggers li:nth-child(1) {
+  top: 10px;
+}
+
+.cp-google-triggers li:nth-child(2) {
+  top: 71px;
+}
+
+.cp-google-services.cp-text-hidden .cp-font-icon {
+   line-height: 50px; /* Use this if text below icons is not needed */
+}
+
+.cp-google-services.cp-text-hidden .cp-font-icon-close {
+   display: none;
+}
+
+.cp-search-active li[g-data-content="cp-search"].cp-text-hidden .cp-font-icon,
+.cp-translate-active li[g-data-content="cp-translate"].cp-text-hidden .cp-font-icon {
+   line-height: 50px; /* Use this if text below icons is not needed */
+   display: none;
+}
+
+.cp-search-active li[g-data-content="cp-search"].cp-text-hidden .cp-font-icon-close,
+.cp-translate-active li[g-data-content="cp-translate"].cp-text-hidden .cp-font-icon-close {
+   line-height: 50px; /* Use this if text below icons is not needed */
+   display: block!important;
+}
+
+.cp-search-active li[g-data-content="cp-search"],
+.cp-translate-active li[g-data-content="cp-translate"] {
+  background:#fff;
+  left: 0;
+}
+
+.cp-google-triggers li:focus,
+.cp-google-triggers li:hover {
+  color: #000;
+}
+
+/* Icon text 
+============*/
+
+.cp-google-services.cp-text-hidden .cp-icon-text { /* Use this if text should not be visible (keep it in html for screen readers!) */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  text-indent: -100%;
+  font-size: 0;
+}
+
+/* Content Blocks
+================== */
+
+.cp-google-content {
+  position: absolute;
+  width: 100%;
+  min-width: 270px;
+  background: #fff;
+  transition: ease 0.2s transform;
+  height: 70px;
+}
+
+.cp-translate-active .cp-google-content {
+  height: 50px!important;
+}
+
+/* Use this if background behind google services is transparent */
+
+@-webkit-keyframes cp-fade-block {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@-moz-keyframes cp-fade-block {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes cp-fade-block {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+.cp-display .cp-google-content {
+  top: 70px;
+  left: -37px;
+  opacity: 0;
+  transition: ease 0.2s opacity;
+}
+
+.cp-display.cp-search-active #cp-translate,
+.cp-display.cp-translate-active #cp-search  {
+  display:none;
+  opacity:0;
+}
+
+.cp-display.cp-search-active #cp-search,
+.cp-display.cp-translate-active #cp-translate {
+  -webkit-animation: cp-fade-block 0.2s forwards;
+  -moz-animation: cp-fade-block 0.2s forwards;
+  animation: cp-fade-block 0.2s forwards;
+}
+
+.cp-display.cp-translate-active .cp-google-content {
+  top: 10px!important;
+  height: 55px;
+}
+
+
+/* Google Search
+================ */
+
+.google-search {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+}
+
+.google-search input[type="text"] {
+  width: 156px;
+  height: 25px;
+  padding: 4px 6px!important;
+  border: 1px solid #fff!important;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  vertical-align: middle;
+  text-align: right;
+  text-indent: 0!important;
+}
+
+.google-search input[type="text"]:focus {
+  text-align: left;
+}
+
+.google-search input[type="submit"] {
+  width: 40px;
+  height: 25px;
+  font-size: 2rem;
+  text-align: center;
+  border: 0;
+  color: #581995;
+  background: #fff;
+  vertical-align: middle;
+  border-left: 1px solid #581995;
+}
+
+.google-search input:focus[type="submit"],
+.google-search input:hover[type="submit"] {
+  color: #000;
+}
+
+
+/* Google Translate
+=================== */
+
+#google_translate_element {
+  position: absolute;
+  top: 9px;
+  right: 13px;
+  height: 26px;
+}
+
+.goog-te-gadget-simple {
+  width: 168px;
+  height: 30px;
+  border: 1px solid #fff!important;
+  border-radius: 4px;
+}
+
+.goog-te-gadget-simple span {
+  display: inline-block;
+  line-height: 2.4;
+}
+
+.goog-te-menu-value span:first-child {
+  width: 112px;
+}
+
+.goog-te-menu-value span + img + span {
+  color: #581995!important;
+  border-left-color: #581995!important;
+}
+
+.goog-te-menu-value > span + img + span {
+  height: 21px;
+  margin-top: 5px;
+  line-height: 1.8;
+}
+
+.goog-te-banner-frame {
+  position: absolute!important;
+  top: -40px!important;
+}
+
+/* Media Queries
+================= */
+
+@media (max-width:1115px) {
+  .home-link {
+    left: 5px;
+    top: 9px;
+    width: 100px;
+  }
+}
+
+
+@media (max-width:1015px) {
+  .main-nav ul li:first-child {
+    border-left: none;
+  }
+}
